@@ -25,11 +25,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┼────────┐
       KC_LGUI, KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBGI,
   // └────────┼────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┼────────┘
-               KC_NO,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                               KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QTSH,
+               KC_LSFT,   KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                             KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QTSH,
   //          ├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-               KC_CAPS, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS,
+               KC_CAPS, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                               KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_ENT,
   //          └────────┴────────┴────────┴────────┼────────┼────────┤                          ├────────┼────────┼────────┴────────┴────────┴────────┘
-                                          LOWER,   KC_SBSPC,  KC_LCTL,                           KC_ETAL, KC_SSPC, LOWER
+                                          LOWER,   KC_SBSPC,  KC_LCTL,                          KC_RALT, KC_SSPC, LOWER
                                   //     └────────┴────────┴────────┘                          └────────┴────────┴────────┘
   ),
 
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // └────────┼────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┼────────┘
                KC_LSFT, RGB_HUD, KC_LEFT, KC_UP,   KC_RGHT, RGB_VAD,                            KC_MUTE, KC_LEFT, KC_UP,   KC_RGHT, KC_PSCR, KC_SLSF,
   //          ├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-               KC_LCTL, RGB_M_B, KC_END,  KC_DOWN, RGB_SAD, RGB_TOG,                            KC_VOLD, KC_PGDN, KC_DOWN, KC_END,  KC_PAUS, KC_NLCT,
+               KC_LCTL, RGB_M_B, KC_END,  KC_DOWN, RGB_SAD, RGB_TOG,                            KC_VOLD, KC_PGDN, KC_DOWN, KC_END,  KC_PAUS, KC_BSLS,
   //          └────────┴────────┴────────┴────────┼────────┼────────┤                          ├────────┼────────┴────────┴────────┴────────┴────────┘
 	                                  KC_TRNS,  KC_SBSPC,  KC_LCTL,                          KC_ETAL, KC_SSPC, KC_TRNS
                                     //   └────────┴────────┴────────┘                          └────────┴────────┴────────┘
