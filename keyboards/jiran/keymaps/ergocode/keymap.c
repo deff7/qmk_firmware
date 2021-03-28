@@ -16,7 +16,6 @@ enum jiran_layers {
 #define SPACE LSFT_T(KC_SPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
   [_QWERTY] = LAYOUT(
   //          ┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
                KC_NO,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,                               KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,
@@ -35,11 +34,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //          ┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
                KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,
   // ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┼────────┐
-      KC_NO,  KC_ESC,  S(KC_1), S(KC_2), S(KC_3),  S(KC_4), S(KC_5),                            S(KC_6), S(KC_9), S(KC_8), S(KC_0), KC_MINUS, KC_EQUAL, KC_NO,
+      KC_NO,  KC_TILD,  S(KC_1), S(KC_2), S(KC_3),  S(KC_4), S(KC_5),                            S(KC_6), S(KC_9), S(KC_8), S(KC_0), KC_MINUS, KC_EQUAL, KC_NO,
   // └────────┼────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┼────────┘
                KC_CAPS,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                               S(KC_7), KC_LBRC, KC_UP,   KC_RBRC, KC_TRNS, KC_BSLS,
   //          ├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-               KC_LGUI, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                               KC_RGUI,   KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, KC_ENT,
+               KC_LGUI, KC_6,    KC_7,    KC_8,    KC_9,    KC_0,                               KC_HOME,   KC_LEFT, KC_DOWN, KC_RIGHT, KC_END, KC_ENT,
   //          └────────┴────────┴────────┴────────┼────────┼────────┤                          ├────────┼────────┴────────┴────────┴────────┴────────┘
                                           KC_TRNS, KC_RCTL,  SPACE,                               SPACE, KC_LALT, KC_TRNS
                                     //   └────────┴────────┴────────┘                          └────────┴────────┴────────┘
